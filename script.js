@@ -1,13 +1,7 @@
-<script type="text/javascript">
-  (function(d, t) {
-      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-      v.onload = function() {
-        window.voiceflow.chat.load({
-          verify: { projectID: '672b7443673ad3993b94c817' },
-          url: 'https://general-runtime.voiceflow.com',
-          versionID: 'production'
-        });
-      }
-      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-  })(document, 'script');
-</script>
+function startSimulation() {
+  alert("Începem simularea! (Adaugă aici detalii sau link către simulări.)");
+}
+
+function startQuiz() {
+  alert("Începem quiz-ul! (Poți redirecționa utilizatorul către întrebările de quiz.)");
+}

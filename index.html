@@ -1,13 +1,53 @@
-<script type="text/javascript">
-    (function(d, t) {
-        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-        v.onload = function() {
-          window.voiceflow.chat.load({
-            verify: { projectID: '672b7443673ad3993b94c817' },
-            url: 'https://general-runtime.voiceflow.com',
-            versionID: 'production'
-          });
-        }
-        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-    })(document, 'script');
-  </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboMate și Fizica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <!-- Logo-ul școlii -->
+      <img src="assets/logo.jpg" alt="Logo Scoala Gimnaziala Nr. 5 Sacele" class="school-logo">
+        <h1>RoboMate și Fizica</h1>
+        <nav>
+            <a href="#lectii">Lecții</a>
+            <a href="#simulari">Simulări</a>
+            <a href="#quiz">Quiz</a>
+        </nav>
+    </header>
+    <section id="lectii">
+        <h2>Lecții Interactive</h2>
+        <p>Explorează concepte de fizică prin lecții bine structurate.</p>
+    </section>
+    <section id="simulari">
+        <h2>Simulări Practice</h2>
+        <p>Simulări care aduc fizica la viață!</p>
+        <button onclick="startSimulation()">Începe simularea</button>
+    </section>
+    <section id="quiz">
+        <h2>Quiz</h2>
+        <p>Testează-ți cunoștințele printr-un scurt chestionar.</p>
+        <button onclick="startQuiz()">Începe quiz-ul</button>
+    </section>
+    <footer>
+        <p>&copy; 2024 RoboMate</p>
+    </footer>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+      (function(d, t) {
+          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          v.onload = function() {
+            window.voiceflow.chat.load({
+              verify: { projectID: '672b7443673ad3993b94c817' },
+              url: 'https://general-runtime.voiceflow.com',
+              versionID: 'production'
+            });
+          }
+          v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+      })(document, 'script');
+    </script>
+</body>
+</html>
+
